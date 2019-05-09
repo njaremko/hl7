@@ -71,3 +71,15 @@ pub use pv2::*;
 pub use segment::*;
 pub use sft::*;
 pub use uac::*;
+
+#[derive(Debug, Fail)]
+pub enum SegmentParsingError {
+    #[fail(display = "invalid toolchain name: {}", name)]
+    Generic {
+        name: String,
+    },
+    #[fail(display = "error parsing MSH segment: {}", version)]
+    MSH {
+        version: String,
+    }
+}

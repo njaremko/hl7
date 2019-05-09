@@ -1,5 +1,5 @@
+use crate::segments::SegmentParsingError;
 use crate::pub_struct;
-use std::num::ParseIntError;
 use std::str::FromStr;
 
 pub_struct!(MSH {
@@ -48,7 +48,7 @@ fn split_repeated(repeat_delim: &str, x: &str) -> Option<Vec<String>> {
 }
 
 impl FromStr for MSH {
-    type Err = ParseIntError;
+    type Err = SegmentParsingError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let mut msh = MSH::default();
