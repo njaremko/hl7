@@ -13,6 +13,15 @@ mod ARV;
 mod AUT;
 mod ARQ;
 
+mod BHS;
+mod BLC;
+mod BLG;
+mod BPO;
+mod BPX;
+mod BTS;
+mod BTX;
+mod BUI;
+
 pub use ABS::*;
 pub use ACC::*;
 pub use ADD::*;
@@ -27,3 +36,12 @@ pub use APR::*;
 pub use ARV::*;
 pub use AUT::*;
 pub use ARQ::*;
+
+pub use BHS::*;
+pub use BLC::*;
+pub use BLG::*;
+pub use BPO::*;
+pub use BPX::*;
+pub use BTS::*;
+pub use BTX::*;
+pub use BUI::*;
