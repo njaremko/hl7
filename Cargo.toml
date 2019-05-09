@@ -3,5 +3,7 @@ name = "hl7"
 version = "0.0.1"
 authors = ["Nathan Jaremko <nathan@jaremko.ca>"]
 edition = "2018"
+description = "An HL7 2.x parser"
+license = "MIT"
 
 [dependencies]
