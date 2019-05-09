@@ -41,23 +41,23 @@ ZPR||"#;
     fn test_parse_msh() {
         let tmp = r#"MSH|^~\&|LAB|MYFAC|LAB||201411130917||ORU^R01|3216598|D|2.3|||AL|NE|"#;
         let msh: MSH = tmp.parse().unwrap();
-        assert_eq!(msh.msh1_field_separator, "|");
-        assert_eq!(msh.msh2_encoding_characters, "^~\\&");
-        assert_eq!(msh.msh3_sending_application, Some("LAB".to_string()));
-        assert_eq!(msh.msh4_sending_facility, Some("MYFAC".to_string()));
-        assert_eq!(msh.msh5_receiving_application, Some("LAB".to_string()));
-        assert_eq!(msh.msh6_receiving_facility, None);
-        assert_eq!(msh.msh7_date_time_of_message, "201411130917");
-        assert_eq!(msh.msh8_security, None);
-        assert_eq!(msh.msh9_message_type, "ORU^R01");
-        assert_eq!(msh.msh10_message_control_id, "3216598");
-        assert_eq!(msh.msh11_processing_id, "D");
-        assert_eq!(msh.msh12_version_id, "2.3");
-        assert_eq!(msh.msh13_sequence_number, None);
-        assert_eq!(msh.msh14_continuation_pointer, None);
-        assert_eq!(msh.msh15_accept_acknowledgment_type, Some("AL".to_string()));
+        assert_eq!(msh.msh_1_field_separator, "|");
+        assert_eq!(msh.msh_2_encoding_characters, "^~\\&");
+        assert_eq!(msh.msh_3_sending_application, Some("LAB".to_string()));
+        assert_eq!(msh.msh_4_sending_facility, Some("MYFAC".to_string()));
+        assert_eq!(msh.msh_5_receiving_application, Some("LAB".to_string()));
+        assert_eq!(msh.msh_6_receiving_facility, None);
+        assert_eq!(msh.msh_7_date_time_of_message, "201411130917");
+        assert_eq!(msh.msh_8_security, None);
+        assert_eq!(msh.msh_9_message_type, "ORU^R01");
+        assert_eq!(msh.msh_10_message_control_id, "3216598");
+        assert_eq!(msh.msh_11_processing_id, "D");
+        assert_eq!(msh.msh_12_version_id, "2.3");
+        assert_eq!(msh.msh_13_sequence_number, None);
+        assert_eq!(msh.msh_14_continuation_pointer, None);
+        assert_eq!(msh.msh_15_accept_acknowledgment_type, Some("AL".to_string()));
         assert_eq!(
-            msh.msh16_application_acknowledgment_type,
+            msh.msh_16_application_acknowledgment_type,
             Some("NE".to_string())
         );
     }

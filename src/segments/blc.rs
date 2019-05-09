@@ -1,5 +1,5 @@
 use crate::pub_struct;
 pub_struct!(BLC {
-    blc1_blood_product_code: Option<String>,
-    blc2_blood_amount: Option<String>,
+    blc_1_blood_product_code: Option<String>,
+    blc_2_blood_amount: Option<String>,
 });
