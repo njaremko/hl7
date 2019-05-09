@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AUT {
     aut1_authorizing_payor_plan_id: Option<String>,
     aut2_authorizing_payor_company_id: String,

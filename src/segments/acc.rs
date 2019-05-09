@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ACC {
     acc1_accident_date_time: Option<String>,
     acc2_accident_code: Option<String>,

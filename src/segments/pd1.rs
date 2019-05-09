@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(PD1 {
     pd1_1_living_dependency: Option<Vec<String>>,
     pd1_2_living_arrangement: Option<String>,

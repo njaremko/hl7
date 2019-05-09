@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ARV {
     arv_1_set_id: Option<String>,
     arv_2_access_restriction_action_code: String,

@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(APR {
     apr1_time_selection_criteria: Option<Vec<String>>,
     apr2_resource_selection_criteria: Option<Vec<String>>,

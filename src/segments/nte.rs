@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(NTE {
     nte_1_set_id: Option<String>,
     nte_2_source_of_comment: Option<String>,

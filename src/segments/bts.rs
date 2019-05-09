@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BTS {
     bts1_batch_message_count: Option<String>,
     bts3_batch_comment: Option<String>,

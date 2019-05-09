@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ABS {
     abs1_discharge_care_provider: Option<String>,
     abs2_transfer_medical_service_code: Option<String>,

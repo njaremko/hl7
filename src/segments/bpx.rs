@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BPX {
     bpx1_set_id: String,
     bpx2_bp_dispense_status: String,

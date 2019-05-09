@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AIG {
     aig1_set_id: String,
     aig2_segment_action_code: Option<String>,

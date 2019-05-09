@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AIL {
     ail1_set_id: String,
     ail2_segment_action_code: Option<String>,

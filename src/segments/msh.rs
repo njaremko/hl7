@@ -1,3 +1,4 @@
+use crate::pub_struct;
 use std::num::ParseIntError;
 use std::str::FromStr;
 

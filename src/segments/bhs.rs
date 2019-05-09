@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BHS {
     bhs1_batch_field_separator: String,
     bhs2_batch_encoding_characters: String,

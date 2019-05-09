@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BLG {
     blg1_when_to_charge: Option<String>,
     blg2_charge_type: Option<String>,

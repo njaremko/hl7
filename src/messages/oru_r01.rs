@@ -1,16 +1,16 @@
 use crate::groups::*;
+use crate::pub_struct;
 use crate::segments::*;
 use std::num::ParseIntError;
 use std::str::FromStr;
 
-#[derive(Default)]
-pub struct ORU_R01 {
+pub_struct!(ORU_R01 {
     msh: MSH,
     sft: Option<Vec<SFT>>,
     uac: Option<UAC>,
     oru_r01_patient_result: Vec<ORU_R01_PATIENT_RESULT>,
     dsc: Option<DSC>,
-}
+});
 
 impl FromStr for ORU_R01 {
     type Err = ParseIntError;

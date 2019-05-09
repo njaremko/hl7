@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AL1 {
     al1_set_id: String,
     allergen_type_code: Option<String>,

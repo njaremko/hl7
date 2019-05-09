@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(NK1 {
     nk1_1_set_id: String,
     nk1_2_name: Option<Vec<String>>,
@@ -39,5 +40,5 @@ pub_struct!(NK1 {
     nk1_38_next_of_kin_birth_place: Option<String>,
     nk1_39_vip_indicator: Option<String>,
     nk1_40_next_of_kin_telecommunication_information: Option<String>,
-    nk1_41_contact_persons_telecommunication_information: Option<String>, 
+    nk1_41_contact_persons_telecommunication_information: Option<String>,
 });

@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(PV1 {
     pv1_1_set_id: Option<String>,
     pv1_2_patient_class: String,

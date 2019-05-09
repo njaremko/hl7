@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(SFT {
     sft_1_software_vendor_organization: String,
     sft_2_software_certified_version_or_release_number: String,

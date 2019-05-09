@@ -2,6 +2,7 @@
 extern crate serde;
 
 pub mod groups;
+mod macros;
 pub mod messages;
 pub mod segments;
 

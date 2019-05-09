@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AIP {
     aip1_set_id: String,
     aip2_segment_action_code: Option<String>,

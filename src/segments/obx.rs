@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(OBX {
     obx_1_set_id: Option<String>,
     obx_2_value_type: String,

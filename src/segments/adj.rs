@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ADJ {
     adj1_provider_adjustment_number: String,
     adj2_payer_adjustment_number: String,

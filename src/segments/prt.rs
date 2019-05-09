@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(PRT {
     prt_1_participation_instance: Option<String>,
     prt_2_action_code: String,

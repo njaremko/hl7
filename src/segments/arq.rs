@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ARQ {
     arq1_placer_appointment_id: String,
     arq2_filler_appointment_id: Option<String>,

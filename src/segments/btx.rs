@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BTX {
     btx1_set_id: String,
     btx2_bc_donation_id: Option<String>,

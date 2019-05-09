@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(AFF {
     aff1_set_id: String,
     aff2_professional_organization: String,

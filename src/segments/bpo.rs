@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BPO {
     bpo1_set_id: String,
     bpo2_bp_universal_service_identifier: String,

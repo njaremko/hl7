@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(PV2 {
     pv2_1_prior_pending_location: Option<String>,
     pv2_2_accommodation_code: Option<String>,

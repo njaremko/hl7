@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(PID {
     pid1_set_id: Option<String>,
     pid2_patient_id: Option<String>,

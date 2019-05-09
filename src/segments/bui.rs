@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(BUI {
     bui1_set_id: Option<String>,
     bui2_blood_unit_identifier: String,

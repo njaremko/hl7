@@ -1,3 +1,4 @@
+use crate::pub_struct;
 pub_struct!(ORC {
     orc_1_order_control: String,
     orc_2_placer_order_number: Option<String>,
