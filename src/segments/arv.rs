@@ -4,5 +4,5 @@ pub struct ARV {
     arv_3_access_restriction_value: String,
     arv_4_access_restriction_reason: Option<Vec<String>>,
     arv_5_special_access_restriction_instructions: Option<Vec<String>>,
-    arv_6_access_restriction_date_range: Option<String>, 
+    arv_6_access_restriction_date_range: Option<String>,
 }

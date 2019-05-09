@@ -19,5 +19,5 @@ pub struct BPX {
     bpx18_bp_actual_dispensed_to_location: Option<String>,
     bpx19_bp_actual_dispensed_to_address: Option<String>,
     bpx20_bp_dispensed_to_receiver: Option<String>,
-    bpx21_bp_dispensing_individual: Option<String>, 
+    bpx21_bp_dispensing_individual: Option<String>,
 }

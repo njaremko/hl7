@@ -12,5 +12,5 @@ pub struct BHS {
     bhs11_batch_control_id: Option<String>,
     bhs12_reference_batch_control_id: Option<String>,
     bhs13_batch_sending_network_address: Option<String>,
-    bhs14_batch_receiving_network_address: Option<String>,  
+    bhs14_batch_receiving_network_address: Option<String>,
 }

@@ -18,5 +18,5 @@ pub struct BTX {
     btx17_bp_transfusion_end_date_time_of_status: Option<String>,
     btx18_bp_adverse_reaction_type: Option<Vec<String>>,
     btx19_bp_transfusion_interrupted_reason: Option<String>,
-    btx20_bp_unique_id: Option<String>, 
+    btx20_bp_unique_id: Option<String>,
 }

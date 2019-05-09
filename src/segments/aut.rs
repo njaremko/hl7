@@ -27,5 +27,5 @@ pub struct AUT {
     aut26_source_date: Option<String>,
     aut27_source_phone: Option<String>,
     aut28_comment: Option<String>,
-    aut29_action_code: Option<String>, 
+    aut29_action_code: Option<String>,
 }

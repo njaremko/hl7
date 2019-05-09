@@ -23,5 +23,5 @@ pub struct ARQ {
     arq22_parent_placer_appointment_id: Option<String>,
     arq23_parent_filler_appointment_id: Option<String>,
     arq24_placer_order_number: Option<Vec<String>>,
-    arq25_filler_order_number: Option<Vec<String>>, 
+    arq25_filler_order_number: Option<Vec<String>>,
 }
