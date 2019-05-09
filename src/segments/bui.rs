@@ -1,4 +1,4 @@
-pub struct BUI {
+pub_struct!(BUI {
     bui1_set_id: Option<String>,
     bui2_blood_unit_identifier: String,
     bui3_blood_unit_type: String,
@@ -11,4 +11,4 @@ pub struct BUI {
     bui10_container_manufacturer: String,
     bui11_transport_temperature: String,
     bui12_transport_temperature_units: String,
-}
+});

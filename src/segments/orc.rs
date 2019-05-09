@@ -1,4 +1,4 @@
-pub struct ORC {
+pub_struct!(ORC {
     orc_1_order_control: String,
     orc_2_placer_order_number: Option<String>,
     orc_3_filler_order_number: Option<String>,
@@ -33,4 +33,4 @@ pub struct ORC {
     orc_32_advanced_beneficiary_notice_date: Option<String>,
     orc_33_alternate_placer_order_number: Option<Vec<String>>,
     orc_34_order_workflow_profile: Option<Vec<String>>,
-}
+});

@@ -1,34 +1,33 @@
 use std::str::FromStr;
 use std::num::ParseIntError;
 
-#[derive(Default)]
-pub struct MSH {
-    pub msh1_field_separator: String,
-    pub msh2_encoding_characters: String,
-    pub msh3_sending_application: Option<String>,
-    pub msh4_sending_facility: Option<String>,
-    pub msh5_receiving_application: Option<String>,
-    pub msh6_receiving_facility: Option<String>,
-    pub msh7_date_time_of_message: String,
-    pub msh8_security: Option<String>,
-    pub msh9_message_type: String,
-    pub msh10_message_control_id: String,
-    pub msh11_processing_id: String,
-    pub msh12_version_id: String,
-    pub msh13_sequence_number: Option<String>,
-    pub msh14_continuation_pointer: Option<String>,
-    pub msh15_accept_acknowledgment_type: Option<String>,
-    pub msh16_application_acknowledgment_type: Option<String>,
-    pub msh17_country_code: Option<String>,
-    pub msh18_character_set: Option<Vec<String>>,
-    pub msh19_principal_language_of_message: Option<String>,
-    pub msh20_alternate_character_set_handling_scheme: Option<String>,
-    pub msh21_message_profile_identifier: Option<Vec<String>>,
-    pub msh22_sending_responsible_organization: Option<String>,
-    pub msh23_receiving_responsible_organization: Option<String>,
-    pub msh24_sending_network_address: Option<String>,
-    pub msh25_receiving_network_address: Option<String>,
-}
+pub_struct!(MSH {
+    msh1_field_separator: String,
+    msh2_encoding_characters: String,
+    msh3_sending_application: Option<String>,
+    msh4_sending_facility: Option<String>,
+    msh5_receiving_application: Option<String>,
+    msh6_receiving_facility: Option<String>,
+    msh7_date_time_of_message: String,
+    msh8_security: Option<String>,
+    msh9_message_type: String,
+    msh10_message_control_id: String,
+    msh11_processing_id: String,
+    msh12_version_id: String,
+    msh13_sequence_number: Option<String>,
+    msh14_continuation_pointer: Option<String>,
+    msh15_accept_acknowledgment_type: Option<String>,
+    msh16_application_acknowledgment_type: Option<String>,
+    msh17_country_code: Option<String>,
+    msh18_character_set: Option<Vec<String>>,
+    msh19_principal_language_of_message: Option<String>,
+    msh20_alternate_character_set_handling_scheme: Option<String>,
+    msh21_message_profile_identifier: Option<Vec<String>>,
+    msh22_sending_responsible_organization: Option<String>,
+    msh23_receiving_responsible_organization: Option<String>,
+    msh24_sending_network_address: Option<String>,
+    msh25_receiving_network_address: Option<String>,
+});
 
 fn some_if_not_empty(x: &str) -> Option<String> {
     if x.len() > 0 {

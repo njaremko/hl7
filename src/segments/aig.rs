@@ -1,4 +1,4 @@
-pub struct AIG {
+pub_struct!(AIG {
     aig1_set_id: String,
     aig2_segment_action_code: Option<String>,
     aig3_resource_id: Option<String>,
@@ -13,4 +13,4 @@ pub struct AIG {
     aig12_duration_units: Option<String>,
     aig13_allow_substitution_code: Option<String>,
     aig14_filler_status_code: Option<String>,
-}
+});

@@ -1,4 +1,4 @@
-pub struct ACC {
+pub_struct!(ACC {
     acc1_accident_date_time: Option<String>,
     acc2_accident_code: Option<String>,
     acc3_accident_location: Option<String>,
@@ -12,4 +12,4 @@ pub struct ACC {
     acc11_accident_address: Option<String>,
     acc12_degree_of_patient_liability: Option<String>,
     acc13_accident_identifier: Option<Vec<String>>,
-}
+});

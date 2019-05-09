@@ -1,4 +1,4 @@
-pub struct BTX {
+pub_struct!(BTX {
     btx1_set_id: String,
     btx2_bc_donation_id: Option<String>,
     btx3_bc_component: Option<String>,
@@ -19,4 +19,4 @@ pub struct BTX {
     btx18_bp_adverse_reaction_type: Option<Vec<String>>,
     btx19_bp_transfusion_interrupted_reason: Option<String>,
     btx20_bp_unique_id: Option<String>,
-}
+});

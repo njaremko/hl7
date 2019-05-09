@@ -1,4 +1,4 @@
-pub struct BHS {
+pub_struct!(BHS {
     bhs1_batch_field_separator: String,
     bhs2_batch_encoding_characters: String,
     bhs3_batch_sending_application: Option<String>,
@@ -13,4 +13,4 @@ pub struct BHS {
     bhs12_reference_batch_control_id: Option<String>,
     bhs13_batch_sending_network_address: Option<String>,
     bhs14_batch_receiving_network_address: Option<String>,
-}
+});

@@ -1,4 +1,4 @@
-pub struct ABS {
+pub_struct!(ABS {
     abs1_discharge_care_provider: Option<String>,
     abs2_transfer_medical_service_code: Option<String>,
     abs3_severity_of_illness_code: Option<String>,
@@ -13,4 +13,4 @@ pub struct ABS {
     abs12_gestation_period_weeks: Option<String>,
     abs13_newborn_code: Option<String>,
     abs14_stillborn_indicator: Option<String>,
-}
+});

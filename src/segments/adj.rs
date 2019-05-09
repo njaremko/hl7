@@ -1,4 +1,4 @@
-pub struct ADJ {
+pub_struct!(ADJ {
     adj1_provider_adjustment_number: String,
     adj2_payer_adjustment_number: String,
     adj3_adjustment_sequence_number: String,
@@ -14,4 +14,4 @@ pub struct ADJ {
     adj13_provider_product_service_line_item_number_cross_reference: Option<String>,
     adj14_adjustment_date: String,
     adj15_responsible_organization: Option<String>,
-}
+});

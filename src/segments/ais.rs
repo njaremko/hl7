@@ -1,4 +1,4 @@
-pub struct AIS {
+pub_struct!(AIS {
     ais1_set_id: String,
     ais2_segment_action_code: Option<String>,
     ais3_universal_service_identifier: String,
@@ -11,4 +11,4 @@ pub struct AIS {
     ais10_filler_status_code: Option<String>,
     ais11_placer_supplemental_service_information: Option<Vec<String>>,
     ais12_filler_supplemental_service_information: Option<Vec<String>>,
-}
+});

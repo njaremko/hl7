@@ -1,4 +1,4 @@
-pub struct BPX {
+pub_struct!(BPX {
     bpx1_set_id: String,
     bpx2_bp_dispense_status: String,
     bpx3_bp_status: String,
@@ -20,4 +20,4 @@ pub struct BPX {
     bpx19_bp_actual_dispensed_to_address: Option<String>,
     bpx20_bp_dispensed_to_receiver: Option<String>,
     bpx21_bp_dispensing_individual: Option<String>,
-}
+});

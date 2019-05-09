@@ -1,4 +1,4 @@
-pub struct PID {
+pub_struct!(PID {
     pid1_set_id: Option<String>,
     pid2_patient_id: Option<String>,
     pid3_patient_identifier_list: Vec<String>,
@@ -39,4 +39,4 @@ pub struct PID {
     pid38_production_class_code: Option<String>,
     pid39_tribal_citizenship: Option<Vec<String>>,
     pid40_patient_telecommunication_information: Option<Vec<String>>,
-}
+});

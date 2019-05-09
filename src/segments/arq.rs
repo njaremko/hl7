@@ -1,4 +1,4 @@
-pub struct ARQ {
+pub_struct!(ARQ {
     arq1_placer_appointment_id: String,
     arq2_filler_appointment_id: Option<String>,
     arq3_occurrence_number: Option<String>,
@@ -24,4 +24,4 @@ pub struct ARQ {
     arq23_parent_filler_appointment_id: Option<String>,
     arq24_placer_order_number: Option<Vec<String>>,
     arq25_filler_order_number: Option<Vec<String>>,
-}
+});

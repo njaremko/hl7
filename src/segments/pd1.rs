@@ -1,4 +1,4 @@
-pub struct PD1 {
+pub_struct!(PD1 {
     pd1_1_living_dependency: Option<Vec<String>>,
     pd1_2_living_arrangement: Option<String>,
     pd1_3_patient_primary_facility: Option<Vec<String>>,
@@ -21,4 +21,4 @@ pub struct PD1 {
     pd1_20_military_rank_grade: Option<String>,
     pd1_21_military_status: Option<String>,
     pd1_22_advance_directive_last_verified_date: Option<String>,
-}
+});

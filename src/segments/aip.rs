@@ -1,4 +1,4 @@
-pub struct AIP {
+pub_struct!(AIP {
     aip1_set_id: String,
     aip2_segment_action_code: Option<String>,
     aip3_personnel_resource_id: Option<Vec<String>>,
@@ -11,4 +11,4 @@ pub struct AIP {
     aip10_duration_units: Option<String>,
     aip11_allow_substitution_code: Option<String>,
     aip12_filler_status_code: Option<String>,
-}
+});

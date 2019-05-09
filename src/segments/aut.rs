@@ -1,4 +1,4 @@
-pub struct AUT {
+pub_struct!(AUT {
     aut1_authorizing_payor_plan_id: Option<String>,
     aut2_authorizing_payor_company_id: String,
     aut3_authorizing_payor_company_name: Option<String>,
@@ -28,4 +28,4 @@ pub struct AUT {
     aut27_source_phone: Option<String>,
     aut28_comment: Option<String>,
     aut29_action_code: Option<String>,
-}
+});

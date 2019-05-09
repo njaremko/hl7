@@ -1,4 +1,4 @@
-pub struct AIL {
+pub_struct!(AIL {
     ail1_set_id: String,
     ail2_segment_action_code: Option<String>,
     ail3_location_resource_id: Option<Vec<String>>,
@@ -11,4 +11,4 @@ pub struct AIL {
     ail10_duration_units: Option<String>,
     ail11_allow_substitution_code: Option<String>,
     ail12_filler_status_code: Option<String>,
-}
+});

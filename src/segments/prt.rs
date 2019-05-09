@@ -1,4 +1,4 @@
-pub struct PRT {
+pub_struct!(PRT {
     prt_1_participation_instance: Option<String>,
     prt_2_action_code: String,
     prt_3_action_reason: Option<String>,
@@ -14,4 +14,4 @@ pub struct PRT {
     prt_13_participation_qualitative_duration: Option<String>,
     prt_14_participation_address: Option<Vec<String>>,
     prt_15_participant_telecommunication_address: Option<Vec<String>>,
-}
+});

@@ -1,4 +1,4 @@
-pub struct BPO {
+pub_struct!(BPO {
     bpo1_set_id: String,
     bpo2_bp_universal_service_identifier: String,
     bpo3_bp_processing_requirements: Option<Vec<String>>,
@@ -13,4 +13,4 @@ pub struct BPO {
     bpo12_bp_requested_dispense_to_address: Option<String>,
     bpo13_bp_indication_for_use: Option<Vec<String>>,
     bpo14_bp_informed_consent_indicator: Option<String>,
-}
+});

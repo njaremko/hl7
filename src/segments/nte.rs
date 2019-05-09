@@ -1,4 +1,4 @@
-pub struct NTE {
+pub_struct!(NTE {
     nte_1_set_id: Option<String>,
     nte_2_source_of_comment: Option<String>,
     nte_3_comment: Option<Vec<String>>,
@@ -7,4 +7,4 @@ pub struct NTE {
     nte_6_entered_date_time: Option<String>,
     nte_7_effective_start_date: Option<String>,
     nte_8_expiration_date: Option<String>,
-}
+});

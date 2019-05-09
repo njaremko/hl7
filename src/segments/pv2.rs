@@ -1,4 +1,4 @@
-pub struct PV2 {
+pub_struct!(PV2 {
     pv2_1_prior_pending_location: Option<String>,
     pv2_2_accommodation_code: Option<String>,
     pv2_3_admit_reason: Option<String>,
@@ -49,4 +49,4 @@ pub struct PV2 {
     pv2_48_expected_pre_admission_testing_date_time: Option<String>,
     pv2_49_notify_clergy_code: Option<Vec<String>>,
     pv2_50_advance_directive_last_verified_date: Option<String>,
-}
+});

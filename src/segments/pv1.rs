@@ -1,4 +1,4 @@
-pub struct PV1 {
+pub_struct!(PV1 {
     pv1_1_set_id: Option<String>,
     pv1_2_patient_class: String,
     pv1_3_assigned_patient_location: Option<String>,
@@ -53,4 +53,4 @@ pub struct PV1 {
     pv1_52_other_healthcare_provider: Option<String>,
     pv1_53_service_episode_description: Option<String>,
     pv1_54_service_episode_identifier: Option<String>,
-}
+});

@@ -1,4 +1,4 @@
-pub struct OBX {
+pub_struct!(OBX {
     obx_1_set_id: Option<String>,
     obx_2_value_type: String,
     obx_3_observation_identifier: String,
@@ -27,4 +27,4 @@ pub struct OBX {
     obx_26_patient_results_release_category: Option<String>,
     obx_27_root_cause: Option<String>,
     obx_28_local_process_control: Option<Vec<String>>,
-}
+});
