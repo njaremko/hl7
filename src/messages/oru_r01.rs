@@ -1,7 +1,7 @@
-use crate::segments::*;
 use crate::groups::*;
-use std::str::FromStr;
+use crate::segments::*;
 use std::num::ParseIntError;
+use std::str::FromStr;
 
 #[derive(Default)]
 pub struct ORU_R01 {

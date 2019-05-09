@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate serde;
+
 pub mod groups;
 pub mod messages;
 pub mod segments;
@@ -34,8 +37,7 @@ ZDR||^Xavarie^Sonna^^^^^XAVS^^^^^XX^^ATP|
 ZPR||"#;
 
     #[test]
-    fn test_parse_msh()
-    {
+    fn test_parse_msh() {
         let tmp = r#"MSH|^~\&|LAB|MYFAC|LAB||201411130917||ORU^R01|3216598|D|2.3|||AL|NE|"#;
         let msh: MSH = tmp.parse().unwrap();
         assert_eq!(msh.msh1_field_separator, "|");
@@ -53,7 +55,10 @@ ZPR||"#;
         assert_eq!(msh.msh13_sequence_number, None);
         assert_eq!(msh.msh14_continuation_pointer, None);
         assert_eq!(msh.msh15_accept_acknowledgment_type, Some("AL".to_string()));
-        assert_eq!(msh.msh16_application_acknowledgment_type, Some("NE".to_string()));
+        assert_eq!(
+            msh.msh16_application_acknowledgment_type,
+            Some("NE".to_string())
+        );
     }
 
     #[test]

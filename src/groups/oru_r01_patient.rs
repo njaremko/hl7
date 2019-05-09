@@ -1,5 +1,5 @@
+use crate::groups::*;
 use crate::segments::*;
-use crate::groups::*; 
 
 pub struct ORU_R01_PATIENT {
     pid: PID,

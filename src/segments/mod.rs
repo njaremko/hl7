@@ -1,6 +1,6 @@
 macro_rules! pub_struct {
     ($name:ident {$($field:ident: $t:ty,)*}) => {
-        #[derive(Debug, Default, Clone, PartialEq)] // ewww
+        #[derive(Debug, Default, Clone, PartialEq, Serialize, Deserialize)] // ewww
         pub struct $name {
             $(pub $field: $t),*
         }
@@ -29,9 +29,10 @@ mod bpx;
 mod bts;
 mod btx;
 mod bui;
+mod dsc;
 mod msh;
-mod nte;
 mod nk1;
+mod nte;
 mod obx;
 mod orc;
 mod pd1;
@@ -39,14 +40,11 @@ mod pid;
 mod prt;
 mod pv1;
 mod pv2;
-mod dsc;
+mod segment;
 mod sft;
 mod uac;
-mod segment;
 
 pub use abs::*;
-pub use dsc::*;
-pub use segment::*;
 pub use acc::*;
 pub use add::*;
 pub use adj::*;
@@ -68,9 +66,10 @@ pub use bpx::*;
 pub use bts::*;
 pub use btx::*;
 pub use bui::*;
+pub use dsc::*;
 pub use msh::*;
-pub use nte::*;
 pub use nk1::*;
+pub use nte::*;
 pub use obx::*;
 pub use orc::*;
 pub use pd1::*;
@@ -78,5 +77,6 @@ pub use pid::*;
 pub use prt::*;
 pub use pv1::*;
 pub use pv2::*;
+pub use segment::*;
 pub use sft::*;
 pub use uac::*;

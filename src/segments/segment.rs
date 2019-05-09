@@ -1,3 +1,1 @@
-pub trait Segment {
-    
-}
+pub trait Segment {}

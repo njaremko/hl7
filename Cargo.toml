@@ -7,3 +7,4 @@ description = "An HL7 2.x parser"
 license = "MIT"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
