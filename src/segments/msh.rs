@@ -38,17 +38,33 @@ fn some_if_not_empty(x: &str) -> Option<String> {
             }
 }
 
+fn split_repeated(repeat_delim: &str, x: &str) -> Option<Vec<String>> {
+    let y: Vec<String> = x.split(repeat_delim).map(|y| y.to_string()).collect();
+    if y.is_empty() {
+        None
+    } else {
+        Some(y)
+    }
+}
+
 impl FromStr for MSH {
     type Err = ParseIntError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let mut msh = MSH::default();
-        assert!(&s[0..3] == "MSH");
         let delimiter = &s[3..4];
         let mut split_input = s.split(delimiter);
+
+        assert!(split_input.next().unwrap() == "MSH");
+    
+        let encoding_chars = split_input.next().unwrap();
+        let component_delim = &encoding_chars[0..1];
+        let repeat_delim = &encoding_chars[1..2];
+        let escape_char = &encoding_chars[2..3];
+        let sub_component_delim = &encoding_chars[3..4];
+
         msh.msh1_field_separator = delimiter.to_string();
-        split_input.next();
-        msh.msh2_encoding_characters = split_input.next().unwrap().to_string();
+        msh.msh2_encoding_characters = encoding_chars.to_string();
         split_input.next().and_then(|x| {
             msh.msh3_sending_application = some_if_not_empty(x);
             split_input.next()
@@ -109,7 +125,7 @@ impl FromStr for MSH {
             split_input.next()
         })
         .and_then(|x| {
-            msh.msh18_character_set = None;
+            msh.msh18_character_set = split_repeated(repeat_delim, x);
             split_input.next()
         })
         .and_then(|x| {
@@ -121,7 +137,7 @@ impl FromStr for MSH {
             split_input.next()
         })
         .and_then(|x| {
-            msh.msh21_message_profile_identifier = None;
+            msh.msh21_message_profile_identifier = split_repeated(repeat_delim, x);
             split_input.next()
         })
         .and_then(|x| {
